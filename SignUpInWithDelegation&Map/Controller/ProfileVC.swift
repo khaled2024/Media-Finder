@@ -29,7 +29,7 @@ class ProfileVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         setUpLayouts()
     }
-   
+    
     //MARK: Functions
     private func setUpLayouts(){
         profileImageView.layer.cornerRadius = (profileImageView.frame.size.width  ) / 7
@@ -59,8 +59,8 @@ class ProfileVC: UIViewController {
     }
     @objc private func goToLogin(){
         if let appDelegate = UIApplication.shared.delegate as? AppDelegate{
-                    appDelegate.goTOLoginScreen()
-                }
+            appDelegate.goTOLoginScreen()
+        }
         showAlert(title: "", message: "You logged out Successfully")
     }
 }

@@ -40,19 +40,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navController = UINavigationController(rootViewController: moviesVC)
         self.window?.rootViewController = navController
     }
-    
     func goTOLoginScreen(){
         let sb = UIStoryboard(name: ViewContollers.main, bundle: nil)
         let loginVC = sb.instantiateViewController(withIdentifier: ViewContollers.loginVC)as! LoginVC
         let navController = UINavigationController(rootViewController: loginVC)
         self.window?.rootViewController = navController
     }
+    // other function
     func goTOProfileScreen(){
         let sb = UIStoryboard(name: ViewContollers.main, bundle: nil)
         let profileVC = sb.instantiateViewController(withIdentifier: ViewContollers.profileVC)as! ProfileVC
         self.window?.rootViewController = profileVC
     }
-   
-
 }
 

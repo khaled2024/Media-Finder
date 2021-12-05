@@ -19,7 +19,7 @@ class MoviesVC: UIViewController{
     private var arrOfMedia: [Media] = [Media]()
     private var resultSegment: String! = ResultSegment.all.rawValue
     private let email = UserDefultsManager.shared().email
-   
+    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
