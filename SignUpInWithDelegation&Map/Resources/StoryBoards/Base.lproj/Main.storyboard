@@ -444,6 +444,14 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyWallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="Me9-P5-Fwj">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="741"/>
                                     </imageView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="OTF-Wr-8kB">
+                                        <rect key="frame" x="157" y="320.5" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="qKf-hm-4Ap"/>
+                                            <constraint firstAttribute="width" constant="100" id="uxR-bh-I90"/>
+                                        </constraints>
+                                        <color key="color" name="ColorApp"/>
+                                    </activityIndicatorView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="u1H-YY-kcz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="741"/>
                                     </tableView>
@@ -458,6 +466,8 @@
                                     <constraint firstAttribute="bottom" secondItem="u1H-YY-kcz" secondAttribute="bottom" id="UvP-km-fb9"/>
                                     <constraint firstAttribute="bottom" secondItem="Me9-P5-Fwj" secondAttribute="bottom" id="VEj-20-weD"/>
                                     <constraint firstItem="u1H-YY-kcz" firstAttribute="leading" secondItem="Hi4-AF-P0b" secondAttribute="leading" id="Xek-TF-vOV"/>
+                                    <constraint firstItem="OTF-Wr-8kB" firstAttribute="centerX" secondItem="Hi4-AF-P0b" secondAttribute="centerX" id="lAp-Ti-UTu"/>
+                                    <constraint firstItem="OTF-Wr-8kB" firstAttribute="centerY" secondItem="Hi4-AF-P0b" secondAttribute="centerY" id="nce-dH-q2R"/>
                                     <constraint firstItem="Me9-P5-Fwj" firstAttribute="width" secondItem="Hi4-AF-P0b" secondAttribute="width" id="rsE-co-fLL"/>
                                     <constraint firstAttribute="trailing" secondItem="u1H-YY-kcz" secondAttribute="trailing" id="wWk-BA-eaP"/>
                                     <constraint firstItem="Me9-P5-Fwj" firstAttribute="height" secondItem="Hi4-AF-P0b" secondAttribute="height" id="xog-ln-Gi6"/>
@@ -485,6 +495,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="OTF-Wr-8kB" id="OQS-3T-OxD"/>
                         <outlet property="emptyWallpaper" destination="Me9-P5-Fwj" id="1BO-ab-4XO"/>
                         <outlet property="serchBar" destination="wo4-MQ-7ZU" id="giO-Pq-WhE"/>
                         <outlet property="tabelView" destination="u1H-YY-kcz" id="ocX-mW-lSQ"/>

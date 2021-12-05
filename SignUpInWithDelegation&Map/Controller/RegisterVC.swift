@@ -59,15 +59,22 @@ class RegisterVC: UIViewController {
     private func isValiedEmail(email: String) -> Bool{
         if !email.trimed.isEmpty{
             if Validtor.shared().isEmailValid(email: email){
-                return true
-            }else{
+                if SqlManager.shared().checkEmailInDB(email: email)!{
+                    return true
+                }else{
+                    showAlert(title: "Sorry", message: "please enter  a different email, this email is taken")
+                }
+            }
+            else{
                 showAlert(title: "Sorry", message: "please Enter valid email example khaled@gmail.com")
                 return false
             }
+            
         }else{
             print("please Check Your Email")
             showAlert(title: "Sorry", message: "please Check Your Email")
         }
+        
         return false
     }
     

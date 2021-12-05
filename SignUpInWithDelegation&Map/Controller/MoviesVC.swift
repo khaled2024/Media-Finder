@@ -14,7 +14,8 @@ class MoviesVC: UIViewController{
     @IBOutlet weak var tabelView: UITableView!
     @IBOutlet weak var serchBar: UISearchBar!
     @IBOutlet weak var emptyWallpaper: UIImageView!
-    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+
     //MARK: - variables
     private var arrOfMedia: [Media] = [Media]()
     private var resultSegment: String! = ResultSegment.all.rawValue
@@ -50,7 +51,6 @@ class MoviesVC: UIViewController{
                 arrOfMedia = media
                 resultSegment = type
                 self.tabelView.reloadData()
-                
             }
         }
     }
@@ -66,13 +66,14 @@ class MoviesVC: UIViewController{
     private func getMediaFromApi(searchName: String , type: String){
         ApiManager.loadMediaArr(term: searchName, media: type) { error, mediaArr in
             if let  error = error{
-                self.showAlert(title: "", message: "There are no results for your search, \(error.localizedDescription)")
+               print(error)
             } else if let mediaArr = mediaArr {
                 self.arrOfMedia = mediaArr
                 self.tabelView.reloadData()
             }
         }
     }
+   
     
     private func setNavigationBar(){
         navigationItem.title = "Media List"
@@ -106,6 +107,13 @@ class MoviesVC: UIViewController{
         default:
             typeSegmentController.selectedSegmentIndex = 0
         }
+    }
+    private func setUpActivityIndecator(){
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.style = .large
+        activityIndicator.color = UIColor(named: "ColorApp")
+        view.addSubview(activityIndicator)
     }
     
     //MARK: - Actions
@@ -160,8 +168,14 @@ extension MoviesVC: UISearchBarDelegate{
             searchBar.endEditing(true)
         }else{
             emptyWallpaper.isHidden = false
+            activityIndicator.isHidden = true
             tabelView.isHidden = true
             searchBar.endEditing(true)
         }
+        
     }
 }
+//self.activityIndicator.startAnimating()
+//self.view.isUserInteractionEnabled = false
+//self.activityIndicator.stopAnimating()
+//self.view.isUserInteractionEnabled = true

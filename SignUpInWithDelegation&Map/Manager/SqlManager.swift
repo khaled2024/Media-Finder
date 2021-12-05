@@ -131,6 +131,23 @@ class SqlManager {
         return nil
     }
     
+    func checkEmailInDB(email: String)-> Bool?{
+        do {
+            let query = self.usersTable.filter( self.email == email)
+            let users = try self.database.prepare(query)
+            for user in users{
+                if email != user[self.email]{
+                    return true
+                }else{
+                    return false
+                }
+            }
+        } catch  {
+            print(error)
+        }
+        return true
+    }
+    
     func loginAuth(email: String , password: String)-> Bool{
         do {
             let users = try database.prepare(usersTable)

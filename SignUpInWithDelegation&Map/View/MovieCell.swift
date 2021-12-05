@@ -37,6 +37,15 @@ class MovieCell: UITableViewCell {
         imageViewBtn.titleLabel?.text = ""
     }
     //MARK: - Functions
+    private func bouncingAnimation(){
+        let imageFrameX = movieImageView.frame.origin.x
+        self.movieImageView.frame.origin.x += 4
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, animations: {
+            self.movieImageView.frame.origin.x -= 10
+            self.movieImageView.frame.origin.x = imageFrameX
+        }, completion: nil)
+    }
+    
     private func setData(media: Media){
         let myString = media.releaseDate!
         let mySubstring = myString.prefix(4)
@@ -68,5 +77,9 @@ class MovieCell: UITableViewCell {
         }else{
             print("Error in media Cell ")
         }
+    }
+    //MARK: - Actions
+    @IBAction func mediaImageTapped(_ sender: UIButton) {
+        self.bouncingAnimation()
     }
 }

@@ -77,9 +77,12 @@
                         <state key="normal">
                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <connections>
+                            <action selector="mediaImageTapped:" destination="V1p-FC-jxb" eventType="touchUpInside" id="aJe-GJ-Bwi"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="typeOfMedia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="oFe-YC-Dn0">
-                        <rect key="frame" x="129" y="138" width="142" height="41"/>
+                        <rect key="frame" x="105" y="142" width="142" height="41"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="142" id="pFV-uP-zbA"/>
                         </constraints>
@@ -88,7 +91,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tay-JY-HCQ">
-                        <rect key="frame" x="14" y="138" width="76" height="41"/>
+                        <rect key="frame" x="14" y="142" width="76" height="41"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="41" id="FWm-f3-rrc"/>
                             <constraint firstAttribute="width" constant="76" id="ZAb-FB-n1Q"/>
@@ -109,13 +112,13 @@
                     <constraint firstItem="gFZ-Mc-8Nq" firstAttribute="leading" secondItem="Tlm-JT-GcH" secondAttribute="trailing" constant="18.5" id="1PN-dZ-OK7"/>
                     <constraint firstItem="fAn-kb-xMB" firstAttribute="height" secondItem="gFZ-Mc-8Nq" secondAttribute="height" id="5g2-Dn-YGf"/>
                     <constraint firstItem="gFZ-Mc-8Nq" firstAttribute="top" secondItem="Frf-I2-AoB" secondAttribute="top" constant="10" id="6e5-29-Tye"/>
-                    <constraint firstItem="tay-JY-HCQ" firstAttribute="top" secondItem="2ZX-nI-fZs" secondAttribute="bottom" constant="21" id="6rm-ea-lEu"/>
+                    <constraint firstItem="tay-JY-HCQ" firstAttribute="top" secondItem="2ZX-nI-fZs" secondAttribute="bottom" constant="25" id="6rm-ea-lEu"/>
                     <constraint firstItem="i4B-t0-eyj" firstAttribute="centerX" secondItem="fAn-kb-xMB" secondAttribute="centerX" id="B3v-O0-pov"/>
                     <constraint firstItem="Tlm-JT-GcH" firstAttribute="leading" secondItem="Frf-I2-AoB" secondAttribute="leading" constant="14" id="CZ9-Hh-fDv"/>
                     <constraint firstItem="2ZX-nI-fZs" firstAttribute="width" secondItem="Tlm-JT-GcH" secondAttribute="width" id="CqM-gr-bUS"/>
                     <constraint firstItem="i4B-t0-eyj" firstAttribute="top" secondItem="fAn-kb-xMB" secondAttribute="bottom" constant="8" symbolic="YES" id="Gxh-iW-K7M"/>
                     <constraint firstItem="Tlm-JT-GcH" firstAttribute="width" secondItem="Frf-I2-AoB" secondAttribute="width" multiplier="0.583851" id="IVC-xj-Sfy"/>
-                    <constraint firstItem="oFe-YC-Dn0" firstAttribute="leading" secondItem="tay-JY-HCQ" secondAttribute="trailing" constant="39" id="OQE-tz-qRv"/>
+                    <constraint firstItem="oFe-YC-Dn0" firstAttribute="leading" secondItem="tay-JY-HCQ" secondAttribute="trailing" constant="15" id="OQE-tz-qRv"/>
                     <constraint firstItem="gFZ-Mc-8Nq" firstAttribute="width" secondItem="Frf-I2-AoB" secondAttribute="width" multiplier="0.310427" constant="-5" id="QKP-i8-IBz"/>
                     <constraint firstItem="Tlm-JT-GcH" firstAttribute="top" secondItem="Frf-I2-AoB" secondAttribute="top" constant="25" id="Qbr-kB-Iaf"/>
                     <constraint firstItem="tay-JY-HCQ" firstAttribute="leading" secondItem="2ZX-nI-fZs" secondAttribute="leading" id="Zzk-IN-IsR"/>
@@ -144,6 +147,11 @@
             <point key="canvasLocation" x="231.8840579710145" y="-1.0044642857142856"/>
         </tableViewCell>
     </objects>
+    <designables>
+        <designable name="2ZX-nI-fZs">
+            <size key="intrinsicContentSize" width="96" height="22"/>
+        </designable>
+    </designables>
     <resources>
         <namedColor name="ColorApp">
             <color red="0.45500001311302185" green="0.68500000238418579" blue="0.81800001859664917" alpha="0.85000002384185791" colorSpace="custom" customColorSpace="displayP3"/>

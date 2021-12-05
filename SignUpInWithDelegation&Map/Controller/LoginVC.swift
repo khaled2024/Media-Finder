@@ -19,6 +19,7 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         UserDefaults.standard.set(false, forKey: UserDefultsKeys.isLoggedIn)
+        SqlManager.shared().getAllUsers()
     }
     override func viewWillAppear(_ animated: Bool) {
         LoginBtn.layer.cornerRadius = 7.0
