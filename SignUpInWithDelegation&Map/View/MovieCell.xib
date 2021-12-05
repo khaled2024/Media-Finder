@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="V1p-FC-jxb" customClass="MovieCell" customModule="SignUpInWithDelegation_Map" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="209"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V1p-FC-jxb" id="Frf-I2-AoB">
+                <rect key="frame" x="0.0" y="0.0" width="422" height="209"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gFZ-Mc-8Nq">
+                        <rect key="frame" x="279" y="10" width="126" height="169"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist-Track Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Tlm-JT-GcH">
+                        <rect key="frame" x="14" y="25" width="246.5" height="42"/>
+                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
+                        <color key="textColor" name="ColorApp"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="charInterval">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="scrollDuration">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="scrollRate">
+                                <real key="value" value="40"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="2ZX-nI-fZs" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                        <rect key="frame" x="14" y="77" width="246.5" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="eNw-fQ-3hW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="19"/>
+                        <color key="textColor" name="ColorApp"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="scrollDuration">
+                                <real key="value" value="40"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="trailingBuffer">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="scrollRate">
+                                <real key="value" value="60"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAn-kb-xMB">
+                        <rect key="frame" x="279" y="10" width="126" height="169"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal">
+                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="typeOfMedia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="oFe-YC-Dn0">
+                        <rect key="frame" x="129" y="138" width="142" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="142" id="pFV-uP-zbA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                        <color key="textColor" name="ColorApp"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tay-JY-HCQ">
+                        <rect key="frame" x="14" y="138" width="76" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="FWm-f3-rrc"/>
+                            <constraint firstAttribute="width" constant="76" id="ZAb-FB-n1Q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                        <color key="textColor" name="ColorApp"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="releaseDate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="i4B-t0-eyj">
+                        <rect key="frame" x="302.5" y="187" width="79" height="15.5"/>
+                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="13"/>
+                        <color key="textColor" name="ColorApp"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="gFZ-Mc-8Nq" firstAttribute="leading" secondItem="Tlm-JT-GcH" secondAttribute="trailing" constant="18.5" id="1PN-dZ-OK7"/>
+                    <constraint firstItem="fAn-kb-xMB" firstAttribute="height" secondItem="gFZ-Mc-8Nq" secondAttribute="height" id="5g2-Dn-YGf"/>
+                    <constraint firstItem="gFZ-Mc-8Nq" firstAttribute="top" secondItem="Frf-I2-AoB" secondAttribute="top" constant="10" id="6e5-29-Tye"/>
+                    <constraint firstItem="tay-JY-HCQ" firstAttribute="top" secondItem="2ZX-nI-fZs" secondAttribute="bottom" constant="21" id="6rm-ea-lEu"/>
+                    <constraint firstItem="i4B-t0-eyj" firstAttribute="centerX" secondItem="fAn-kb-xMB" secondAttribute="centerX" id="B3v-O0-pov"/>
+                    <constraint firstItem="Tlm-JT-GcH" firstAttribute="leading" secondItem="Frf-I2-AoB" secondAttribute="leading" constant="14" id="CZ9-Hh-fDv"/>
+                    <constraint firstItem="2ZX-nI-fZs" firstAttribute="width" secondItem="Tlm-JT-GcH" secondAttribute="width" id="CqM-gr-bUS"/>
+                    <constraint firstItem="i4B-t0-eyj" firstAttribute="top" secondItem="fAn-kb-xMB" secondAttribute="bottom" constant="8" symbolic="YES" id="Gxh-iW-K7M"/>
+                    <constraint firstItem="Tlm-JT-GcH" firstAttribute="width" secondItem="Frf-I2-AoB" secondAttribute="width" multiplier="0.583851" id="IVC-xj-Sfy"/>
+                    <constraint firstItem="oFe-YC-Dn0" firstAttribute="leading" secondItem="tay-JY-HCQ" secondAttribute="trailing" constant="39" id="OQE-tz-qRv"/>
+                    <constraint firstItem="gFZ-Mc-8Nq" firstAttribute="width" secondItem="Frf-I2-AoB" secondAttribute="width" multiplier="0.310427" constant="-5" id="QKP-i8-IBz"/>
+                    <constraint firstItem="Tlm-JT-GcH" firstAttribute="top" secondItem="Frf-I2-AoB" secondAttribute="top" constant="25" id="Qbr-kB-Iaf"/>
+                    <constraint firstItem="tay-JY-HCQ" firstAttribute="leading" secondItem="2ZX-nI-fZs" secondAttribute="leading" id="Zzk-IN-IsR"/>
+                    <constraint firstItem="oFe-YC-Dn0" firstAttribute="height" secondItem="tay-JY-HCQ" secondAttribute="height" id="aH3-LZ-Fb3"/>
+                    <constraint firstItem="fAn-kb-xMB" firstAttribute="centerX" secondItem="gFZ-Mc-8Nq" secondAttribute="centerX" id="c6G-RS-9cP"/>
+                    <constraint firstItem="Tlm-JT-GcH" firstAttribute="height" secondItem="Frf-I2-AoB" secondAttribute="height" multiplier="0.2" id="huq-fW-2z4"/>
+                    <constraint firstItem="gFZ-Mc-8Nq" firstAttribute="height" secondItem="Frf-I2-AoB" secondAttribute="height" multiplier="0.808612" id="j60-TG-MAK"/>
+                    <constraint firstItem="oFe-YC-Dn0" firstAttribute="centerY" secondItem="tay-JY-HCQ" secondAttribute="centerY" id="mEh-JK-Wjc"/>
+                    <constraint firstItem="2ZX-nI-fZs" firstAttribute="top" secondItem="Tlm-JT-GcH" secondAttribute="bottom" constant="10" id="nZm-06-b8Q"/>
+                    <constraint firstItem="fAn-kb-xMB" firstAttribute="centerY" secondItem="gFZ-Mc-8Nq" secondAttribute="centerY" id="wVM-gt-M41"/>
+                    <constraint firstItem="2ZX-nI-fZs" firstAttribute="leading" secondItem="Tlm-JT-GcH" secondAttribute="leading" id="xpi-82-1sV"/>
+                    <constraint firstItem="fAn-kb-xMB" firstAttribute="width" secondItem="gFZ-Mc-8Nq" secondAttribute="width" id="yib-T4-bZ3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="kXh-bT-5ZI"/>
+            <connections>
+                <outlet property="ArtistNameLabel" destination="Tlm-JT-GcH" id="D30-dR-0Ih"/>
+                <outlet property="DescriptionLabel" destination="2ZX-nI-fZs" id="lum-8X-bHF"/>
+                <outlet property="TrackNameLabel" destination="Tlm-JT-GcH" id="2P0-sa-URy"/>
+                <outlet property="countryLabel" destination="tay-JY-HCQ" id="DRL-3t-mOe"/>
+                <outlet property="imageViewBtn" destination="fAn-kb-xMB" id="IL2-jk-6sI"/>
+                <outlet property="movieImageView" destination="gFZ-Mc-8Nq" id="Iv9-5J-pgS"/>
+                <outlet property="typeOfMedia" destination="oFe-YC-Dn0" id="rf3-bK-Mf6"/>
+                <outlet property="yearOfMovie" destination="i4B-t0-eyj" id="G6I-f9-biG"/>
+            </connections>
+            <point key="canvasLocation" x="231.8840579710145" y="-1.0044642857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="ColorApp">
+            <color red="0.45500001311302185" green="0.68500000238418579" blue="0.81800001859664917" alpha="0.85000002384185791" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

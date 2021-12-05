@@ -1,0 +1,6 @@
+framework module Pods_SignUpInWithDelegation_Map {
+  umbrella header "Pods-SignUpInWithDelegation&Map-umbrella.h"
+
+  export *
+  module * { export * }
+}
