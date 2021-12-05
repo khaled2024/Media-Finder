@@ -18,13 +18,13 @@ class Validtor: UIViewController{
     //MARK: - functions
     
     func isEmailValid(email: String)->Bool{
-        let regx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
-        let pred = NSPredicate(format: "SELF MATCHES %@", regx)
+        let regx = Regxs.emailregx
+        let pred = NSPredicate(format: Regxs.predicateFormate, regx)
         return pred.evaluate(with: email)
     }
     func isPasswordValid(password: String)->Bool{
-        let regx = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
-        let pred = NSPredicate(format: "SELF MATCHES %@", regx)
+        let regx = Regxs.passwordregx
+        let pred = NSPredicate(format: Regxs.predicateFormate, regx)
         return pred.evaluate(with: password)
     }
 }
